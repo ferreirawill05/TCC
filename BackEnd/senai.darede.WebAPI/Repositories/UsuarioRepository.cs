@@ -18,6 +18,11 @@ namespace senai.darede.WebAPI.Repositories
             return ctx.Usuarios.FirstOrDefault(c => c.IdUsuario == id);
         }
 
+        /*public static string GerarHash(string senha)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(senha);
+        }*/
+
         public void Atualizar(int idUsuario, Usuario usuarioAtualizado)
         {
             Usuario usuarioBuscado = ListarId(idUsuario);

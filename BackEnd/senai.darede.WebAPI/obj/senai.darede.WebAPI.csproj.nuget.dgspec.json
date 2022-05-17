@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[5.0.15, )"
             },
+            "Portable.BouncyCastle": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.3.0, )"

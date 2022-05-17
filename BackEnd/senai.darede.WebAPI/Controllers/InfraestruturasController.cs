@@ -6,6 +6,7 @@ using senai.darede.WebAPI.Interfaces;
 using senai.darede.WebAPI.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +18,11 @@ namespace senai.darede.WebAPI.Contexts
     [ApiController]
     public class InfraestruturasController : ControllerBase
     {
+        static void Main(string[] args)
+        {
+            string command = "/C notepad.exe";
+            Process.Start("cmd.exe", command);
+        }
 
         private IInfraestruturaRepository _InfraestruturaRepository { get; set; }
 
@@ -100,24 +106,5 @@ namespace senai.darede.WebAPI.Contexts
                 });
             }
         }
-
-        /*[HttpGet("Infraestruturas Ativas")]
-        public IActionResult InfraestruturasAtivo()
-        {
-            try
-            {
-                bool Ativo 
-                if(Ativo ==true)
-                    {
-                    return
-                }
-            }
-            catch
-            {
-
-            }
-            
-        }*/
-
     }
 }
