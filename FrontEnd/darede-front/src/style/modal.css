@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.modal{
+    width: 100%;
+    height: 112vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-position{
+    display: flex;
+    align-self: flex-start;
+    margin: 30px 0px 0px 30px;
+    border: none;
+
+    font-size: 40px;
+    background-color: #fff;
+}
+
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    border: solid black 1px;
+    border-radius: 10px;
+    color: black;
+    width: 60%;
+    height: 82%;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.modal-cadastro{
+    margin-top: 25px;
+}
+
+.modal-cadastro form{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-cadastro input{
+    width: 18rem;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: 1px black;
+    padding-left: 5px;
+}
+
+.modal-cadastro button{
+    margin-top: 20px;
+}
+
+.modal-cadastro::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    color: #627282;
+    padding-left: 1px;
+}
+
+.input-group{
+    width: 70%;
+    margin: 10px 0px;
+}
+
+.input-group input{
+    margin: 10px 0px;
+}
+
+.input-group1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-group2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-group-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-cadastro h2{
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*------------------------------------------------*/
+
+.modal-list{
+    height: 1vh;
+}
+
+.info-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #00964F;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.info-container button{
+    border: none;
+    background-color: transparent;
+    height: 25px;
+}
+
+.arrow{
+    width: 25px;
+    height: 25px;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width: 215px;
+}
+
+.info-box{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.info-modal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

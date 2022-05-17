@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>senai.darede.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:senai.darede.WebAPI.Interfaces.IArmInstanciumRepository">
+            <summary>
+            Interface responsável pelo repositório ArmInstanciumRepository
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IArmInstanciumRepository.Cadastrar(senai.darede.WebAPI.Domains.ArmInstancium)">
+            <summary>
+            Cadastra uma nova ArmInstancia
+            </summary>
+            <param name="novoArmInstancia">Objeto novoArmInstancia com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IArmInstanciumRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.ArmInstancium)">
+            <summary>
+            Atualiza uma ArmInstancia existente passando o id pela URL da requisição
+            </summary>
+            <param name="idArmInstancia">id da ArmInstancia que será atualizado</param>
+            <param name="armInstanciaAtualizado">Objeto ArmInstanciaAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IArmInstanciumRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um Arminstancia através de seu ID
+            </summary>
+            <param name="id">ID do ArmInstancia buscado</param>
+            <returns>o ArmInstancia buscado</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IArmInstanciumRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Zona existente
+            </summary>
+            <param name="idArmInstancia">ID da Zona deletado</param>
+        </member>
+        <member name="T:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository">
+            <summary>
+            Interface responsável pelo repositório Infraestrutura
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository.Cadastrar(senai.darede.WebAPI.Domains.Infraestrutura)">
+            <summary>
+            Cadastra uma nova Infraestrutura
+            </summary>
+            <param name="novaInfraestrutura">Objeto novaInfraestrutura com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.Infraestrutura)">
+            <summary>
+            Atualiza uma Infraestrutura existente passando o id pela URL da requisição
+            </summary>
+            <param name="idInfraestrutura">id da Infraestrutura que será atualizada</param>
+            <param name="infraestruturaAtualizada">Objeto InfraestruturaAtualizada com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository.ListarId(System.Int32)">
+            <summary>
+            Busca uma Infraestrutura através de seu ID
+            </summary>
+            <param name="id">ID do Infraestrutura buscado</param>
+            <returns>A infraestrutura buscada</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta uma Infraestrutura existente
+            </summary>
+            <param name="idInfraestrutura">ID da Infraestrutura deletado</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IInfraestruturaRepository.MinhasInfraestruturas(System.Int32)">
+            <summary>
+            Lista as Infraestruturas do usuário
+            </summary>
+            <param name="idUsuario">ID do Usuario que terá a infraestruturas listadas</param>
+        </member>
+        <member name="T:senai.darede.WebAPI.Interfaces.ISoftwareRepository">
+            <summary>
+            Interface responsável pelo repositório SoftwareInterface
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ISoftwareRepository.Cadastrar(senai.darede.WebAPI.Domains.Software)">
+            <summary>
+            Cadastra um novo Software
+            </summary>
+            <param name="novoSoftware">Objeto novoSoftware com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ISoftwareRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.Software)">
+            <summary>
+            Atualiza um Software existente passando o id pela URL da requisição
+            </summary>
+            <param name="idSoftware">id do Software que será atualizado</param>
+            <param name="softwareAtualizado">Objeto softwareAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ISoftwareRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um Software através de seu ID
+            </summary>
+            <param name="id">ID do Software buscado</param>
+            <returns>O Software buscado</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ISoftwareRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Software existente
+            </summary>
+            <param name="idSoftware">ID do Software deletado</param>
+        </member>
+        <member name="T:senai.darede.WebAPI.Interfaces.ITipoInstanciumRepository">
+            <summary>
+            Interface responsável pelo repositório TipoInstanciumRepository
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ITipoInstanciumRepository.Cadastrar(senai.darede.WebAPI.Domains.TipoInstancium)">
+            <summary>
+            Cadastra uma nova TipoInstancia
+            </summary>
+            <param name="novoTipoInstancia">Objeto novoTipoInstancia com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ITipoInstanciumRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.TipoInstancium)">
+            <summary>
+            Atualiza uma TipoInstancia existente passando o id pela URL da requisição
+            </summary>
+            <param name="idTipoInstancia">id da TipoInstancia que será atualizado</param>
+            <param name="tipoInstanciaAtualizado">Objeto tipoInstanciaAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ITipoInstanciumRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um tipoinstancia através de seu ID
+            </summary>
+            <param name="id">ID do TipoInstancia buscado</param>
+            <returns>o TipoInstancia buscado</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.ITipoInstanciumRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Zona existente
+            </summary>
+            <param name="idTipoInstancia">ID da Zona deletado</param>
+        </member>
+        <member name="T:senai.darede.WebAPI.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsável pelo repositório UsuarioRepository
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IUsuarioRepository.Cadastrar(senai.darede.WebAPI.Domains.Usuario)">
+            <summary>
+            Cadastra um novo Usuario
+            </summary>
+            <param name="novoUsuario">Objeto novoUsuario com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IUsuarioRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.Usuario)">
+            <summary>
+            Atualiza um Usuario existente passando o id pela URL da requisição
+            </summary>
+            <param name="idUsuario">id do Usuario que será atualizado</param>
+            <param name="usuarioAtualizado">Objeto UsuarioAtualizado com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IUsuarioRepository.ListarId(System.Int32)">
+            <summary>
+            Busca um Usuario através de seu ID
+            </summary>
+            <param name="id">ID do Usuario buscado</param>
+            <returns>O Usuario buscado</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Usuario existente
+            </summary>
+            <param name="idUsuario">ID do Usuario deletado</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Busca um usuário através de seu email e senha
+            </summary>
+            <param name="email">Email do usuário buscado</param>
+            <param name="senha">Senha do usuário buscado</param>
+            <returns>Usuário buscado</returns>
+        </member>
+        <member name="T:senai.darede.WebAPI.Interfaces.IZonaRepository">
+            <summary>
+            Interface responsável pelo repositório ZonaInterface
+            </summary>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IZonaRepository.Cadastrar(senai.darede.WebAPI.Domains.Zona)">
+            <summary>
+            Cadastra uma nova Zona
+            </summary>
+            <param name="novaZona">Objeto novaZona com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IZonaRepository.Atualizar(System.Int32,senai.darede.WebAPI.Domains.Zona)">
+            <summary>
+            Atualiza uma Zona existente passando o id pela URL da requisição
+            </summary>
+            <param name="idZona">id da Zona que será atualizado</param>
+            <param name="zonaAtualizada">Objeto zonaAtualizada com os novos dados</param>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IZonaRepository.ListarId(System.Int32)">
+            <summary>
+            Busca uma Zona através de seu ID
+            </summary>
+            <param name="id">ID da Zona buscada</param>
+            <returns>a Zona buscada</returns>
+        </member>
+        <member name="M:senai.darede.WebAPI.Interfaces.IZonaRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um Zona existente
+            </summary>
+            <param name="idZona">ID da Zona deletado</param>
+        </member>
+        <member name="M:Patrimonio.Utils.Upload.UploadFile(Microsoft.AspNetCore.Http.IFormFile,System.String[])">
+            <summary>
+            Faz o upload do arquivo para o servidor
+            </summary>
+            <param name="arquivo">Arquivo vindo de um formulário</param>
+            <param name="extensoesPermitidas">Array com extensões permitidas apenas</param>
+            <returns>Nome do arquivo salvo</returns>
+        </member>
+        <member name="M:Patrimonio.Utils.Upload.ValidarExtensao(System.String[],System.String)">
+            <summary>
+            Valida o uso de enxtensões permitidas apenas
+            </summary>
+            <param name="extensoes">Array de extensões permitidas</param>
+            <param name="nomeDoArquivo">Nome do arquivo</param>
+            <returns>Verdadeiro/Falso</returns>
+        </member>
+        <member name="M:Patrimonio.Utils.Upload.RemoverArquivo(System.String)">
+            <summary>
+            Remove um arquivo do servidor
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+        </member>
+        <member name="M:Patrimonio.Utils.Upload.RetornarExtensao(System.String)">
+            <summary>
+            Retorna a extensão de um arquivo
+            </summary>
+            <param name="nomeDoArquivo">Nome do Arquivo</param>
+            <returns>Retorna a extensão de um arquivo</returns>
+        </member>
+    </members>
+</doc>

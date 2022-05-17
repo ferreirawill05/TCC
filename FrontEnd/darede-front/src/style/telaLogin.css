@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* !!! alterar box-body, não limitar o tamanho de nada!!! */
+/* !!! arrumar imagem do undraw!!!*/
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h1-login {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.box-bodyL{
+    display: flex;
+    flex-direction: row;
+    height: 837px;
+}
+
+.esquerdaL{
+    background-color:#00964F;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.direitaL{
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.direitaL form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.direitaL input{
+    width: 18rem;
+    height: 3rem;
+    border-radius: 5px;
+    border-color: 1px black;
+    padding-left: 5px;
+}
+
+.direitaL input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    color: #627282;
+    padding-left: 1px;
+}
+
+.btn-formL{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: #00964F;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    width: 13rem;
+    height: 3rem;
+}
+
+.contaL{
+    font-family: 'Open Sans', 'sans-serif';
+    width: 273px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contaL a{
+    font-family: 'Open Sans', sans-serif;
+    color: #00AFF4;
+    text-decoration: none;
+}
+
+.redirectL{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redirectL button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.redirectL img{
+    width: 32px;
+    height: 34px;
+    margin-right: 7px;
+}

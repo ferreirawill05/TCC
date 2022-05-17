@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #00964F;
+    height: 74px;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-esquerda-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+}
+
+.box-direita-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    height: 62px;
+}
+
+.img-header{
+    height: 70px;
+}
+
+.button-img{
+    height: 45px;
+    width: 45px;
+}
+
+.button-header{
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 20px;
+    height: 52px;
+    margin: 0px 25px;
+    padding: 0px 13px 0px 3px;
+}
+
+.button-span-header{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.icon-perfil{
+    margin-top: 2px;
+    width: 60px;
+}
